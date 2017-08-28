@@ -1,0 +1,54 @@
+{
+  "name": "popApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node ./server/server.js",
+    "server": "node ./server/server.js",
+    "build": "webpack --progress --colors",
+    "dev": "webpack-dev-server --progress --colors --watch",
+    "test": "jest"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "express": "^4.15.3",
+    "immutable": "^3.8.1",
+    "moment": "^2.18.1",
+    "path": "^0.12.7",
+    "react": "^15.6.1",
+    "react-datepicker": "^0.53.0",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.2",
+    "style-loader": "^0.18.2",
+    "superagent": "^3.6.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "eslint": "^4.3.0",
+    "eslint-plugin-react": "^7.1.0",
+    "expect": "^1.20.2",
+    "jest": "^20.0.4",
+    "nock": "^9.0.14",
+    "redux-mock-store": "^1.2.3",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.4.1"
+  }
+}
